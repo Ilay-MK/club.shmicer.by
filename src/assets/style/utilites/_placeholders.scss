@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+%bg-cover {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+// --------------------------------------- //
+
+%transition300ease {
+    transition: All 300ms ease;
+}
+
+%outline_boxShadow_none {
+    box-shadow: 0 0 0 0 transparent;
+    box-shadow: none;
+    outline: 0 solid transparent;
+    outline: none;
+}
+
+// --------------------------------------- //
+
+%font-PT_Sans {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+%font-PT_Serif {
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+// --------------------------------------- //

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.modal {
+
+    &-dialog {
+
+        .form-order {
+
+            .btn {
+                &-main, &-main:link, &-main:visited, &-main:hover, &-main:active, &-main:focus {
+
+                }
+            }
+        }
+    }
+
+    &-title {
+
+    }
+}

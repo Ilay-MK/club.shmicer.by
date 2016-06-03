@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+input, textarea {
+    @extend %transition300ease;
+}
+
+input {
+
+}
+
+textarea {
+    overflow-x: hidden;
+}
+
+.form-group {
+    /*position: relative;*/
+
+    &-main {
+
+    }
+
+    .form-control {
+
+        &-main {
+
+            &:focus {
+                box-shadow: inset 0 1px 1px rgba(0,0,0, .075),
+                            0 0 8px rgba(0,0,0, .5);
+            }
+        }
+    }
+
+    .form-control-feedback {
+
+    }
+
+    &.has {
+        &-error {
+            .form-control-feedback {
+
+            }
+        }
+
+        &-success {
+            .form-control-feedback {
+
+            }
+        }
+    }
+}
+
+button, .btn {
+
+}
+
+.btn {
+
+    &:link, &:visited, &:hover, &:active, &:focus, &:focus:active {
+
+    }
+
+    &-main {
+        @extend %outline_boxShadow_none;
+        @extend %font-PT_Sans;
+        @extend %transition300ease;
+        background-color: transparent;
+        border: 1px solid rgba(0,0,0, 0.5);
+        /*text-transform: uppercase;*/
+
+        &:link, &:visited, &:hover, &:active, &:focus, &:focus:active {
+            @extend %outline_boxShadow_none;
+            background-color: transparent;
+            border: 1px solid rgba(0,0,0, 0.75);
+            color: #fff;
+        }
+
+        &:hover, &:focus {
+            background-color: rgba(0,0,0, 0.25);
+        }
+
+        &:active, &:focus:active {
+            border: 1px solid rgba(0,0,0, 0.3);
+            background-color: rgba(0,0,0, 0.25);
+        }
+    }
+}
+
+fieldset {
+
+
+    legend {
+
+    }
+
+    label {
+
+    }
+}

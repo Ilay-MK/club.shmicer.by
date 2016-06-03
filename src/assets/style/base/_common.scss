@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* Custom */
+@include placeholder {
+    @extend %font-PT_Sans;
+    opacity: 1;
+    text-overflow: ellipsis;
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
+}
+
+@include plhdr(":focus") {
+    text-indent: 700px;
+}
+
+* {
+    @include box-sizing (border-box);
+    &:before, &:after {
+        @include box-sizing (border-box);
+    }
+}
+
+html {
+    font-size: 24px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+body {
+    @extend %font-PT_Serif;
+    font-size: 14px;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    @extend %transition300ease;
+    display: inline-block;
+    text-decoration: none;
+
+    &:link, &:visited , &:hover, &:active, &:focus {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &:link {
+
+    }
+    &:visited {
+
+    }
+    &:hover {
+
+    }
+    &:active {
+
+    }
+    &:focus {
+        outline: thin dotted;
+        outline: 1px auto -webkit-focus-ring-color;
+        /*outline: 0px solid transparent;
+        outline: none;*/
+    }
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+figure {
+    margin: 0
+}
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+}
+
+// Extras
+// -- Highlight Color Customization
+@include highlight-color {
+    /*color: #fff;
+    background-color: #000;*/
+    background-color: transparent;
+    text-shadow: none;
+}
+
+img {
+    @include highlight-color-append {
+        color: #fff;
+        background: transparent;
+    }
+}
+
+/*@include hl-color ("img") {
+    color: #fff;
+    background: transparent;
+}*/
+
+:focus {
+
+}
