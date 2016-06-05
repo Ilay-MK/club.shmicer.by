@@ -29,9 +29,6 @@ $(document).ready(function () {
         var formGroup = $(this).parents('.form-group');
 
         formGroup.removeClass('has-error has-success');
-        $('#formOrder .form-control-feedback-message-success').animate({
-            opacity: 0
-        }, 300);
 
         $(this).closest('form').find('.submit').prop('disabled', false);
     })
