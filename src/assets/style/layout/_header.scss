@@ -1,5 +1,71 @@
 @charset "UTF-8";
 
 #header {
+    @extend %bg-cover;
+    background-image: url('../img/header/bg_1.jpg');
+    color: map-get($colors, "c_w");
+    position: relative;
 
+    .container {
+        position: relative;
+    }
+
+    .top {
+        margin-top: 50px;
+        overflow: hidden;
+
+        .pull-left {
+            text-align: center;
+
+            .logo {
+                font-size: 2em;
+
+                p {
+                }
+
+                .fa {
+
+                }
+            }
+
+            .desc {
+
+                p {
+                }
+            }
+        }
+
+        .pull-right {
+            text-align: center;
+
+            p {
+            }
+
+            .desc {
+                font-size: 1.02em;
+            }
+
+            .phone {
+                font-size: 1.36em;
+            }
+
+            .btn {
+
+                &.btn-main {
+                    font-size: 0.9em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .header-content {
+        margin: 100px auto 200px;
+
+        h1 {
+            @extend %font-PT_Serif;
+            font-size: 48px;
+            text-align: center;
+        }
+    }
 }
