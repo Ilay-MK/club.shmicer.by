@@ -1,21 +1,18 @@
 @charset "UTF-8";
 
 #header {
-    @extend %bg-cover;
     background-image: url('../img/header/bg_1.jpg');
-    color: map-get($colors, "c_w");
-    position: relative;
 
     .container {
         position: relative;
     }
 
     .top {
-        margin-top: 50px;
+        margin-top: 3.2em;
         overflow: hidden;
 
         .pull-left {
-            text-align: center;
+            /*text-align: center;*/
 
             .logo {
                 font-size: 2em;
@@ -36,7 +33,7 @@
         }
 
         .pull-right {
-            text-align: center;
+            /*text-align: center;*/
 
             p {
             }
@@ -60,12 +57,12 @@
     }
 
     .header-content {
-        margin: 100px auto 200px;
+        margin: 9em auto 19em;
 
         h1 {
             @extend %font-PT_Serif;
-            font-size: 48px;
-            text-align: center;
+            font-size: 3.428571429em;
+            /*text-align: center;*/
         }
     }
 }
