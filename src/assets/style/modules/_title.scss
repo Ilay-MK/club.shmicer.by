@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
 .title {
+    margin: 50px auto 30px;
+    text-align: center;
 
     h2 {
-
+        @extend %font-PT_Serif;
+        font-size: 2.5em;
     }
 }
