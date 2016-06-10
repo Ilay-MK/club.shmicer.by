@@ -35,23 +35,36 @@
                 margin-right: -15px !important;
                 width: calc(50% + 15px);
             }
+
+            .arrow-block {
+                bottom: auto;
+                left: auto;
+                right: -10px;
+                top: 0;
+
+                .arrow {
+                    bottom: auto;
+                    top: 4px;
+                }
+            }
         }
 
         .reson-xs-right {
             /*height: 163px;*/
-            min-height: 50px;
+            /*min-height: 50px;*/
+        }
+        /*.reson-xs-right*/
+        .col-reson-offset-xs-right {
 
             .arrow-block {
-                bottom: 0;
+                bottom: auto;
                 left: auto;
                 right: -10px;
-                top: auto;
+                top: 0;
 
                 .arrow {
-                    bottom: 4px;
-                    top: auto;
-                    transform: rotate(-45deg);
-                    width: 20px;
+                    bottom: auto;
+                    top: 4px;
                 }
             }
         }
@@ -62,12 +75,12 @@
             position: absolute;
             left: -10px;
             right: auto;
-            top: 0;
+            bottom: 0;
             width: 20px;
 
             .arrow {
                 border: 1px solid #fff;
-                top: 4px;
+                bottom: 4px;
                 height: 20px;
                 position: absolute;
                 transform: rotate(-45deg);
@@ -82,10 +95,10 @@
             }
         }
 
-        .col-reson-offset-bottom {
+        .col-reson-offset-top {
             .arrow-block {
-                left: -10px;
-                right: auto;
+                left: -10px !important;
+                right: auto !important;
             }
         }
 
@@ -99,7 +112,9 @@
             min-height: 163px;
             overflow: hidden;
             padding: 40px 20px;
+            position: relative;
             text-align: center;
+            z-index: 99;
 
             h3 {
                 margin-top: 0;
@@ -122,7 +137,7 @@
             }
 
             &-main {
-                bottom: -40px; /*-82px*/
+                bottom: -47px; /*-82px -40px*/
                 min-height: 279px; /*326px*/
                 position: relative;
 
@@ -132,6 +147,58 @@
 
                 border-radius: 5px 30%;
                 /*text-align: left;*/
+
+                &-line {
+                    position: relative;
+                    z-index: 1;
+
+                    &-diag {
+                        background-color: #fff;
+                        height: 1px;
+                        position: absolute;
+                        width: 70px;
+
+                        &.reson-main-line-left {
+                            left: -55px;
+                        }
+
+                        &.reson-main-line-right {
+                            right: -55px;
+                        }
+
+                        &-top {
+                            top: 150px;
+
+                            &.reson-main-line-left {
+                                /*transform: rotate(45deg);*/
+                            }
+
+                            &.reson-main-line-right {
+                                /*transform: rotate(-45deg);*/
+                            }
+                        }
+
+                        &-bottom {
+                            bottom: -5px;
+
+                            &.reson-main-line-left {
+                                left: -45px;
+                                transform: rotate(-32deg);
+                            }
+
+                            &.reson-main-line-right {
+                                right: -45px;
+                                transform: rotate(32deg);
+                                width: 65px;
+                            }
+                        }
+                    }
+
+                    &-bottom {
+                        bottom: -47px;
+                        /*min-height: 123px !important;*/
+                    }
+                }
             }
 
             &-bottom {
@@ -163,7 +230,7 @@
 
                 &-left, &-right {
                     width: calc(50% + 15px); /*50%*/
-                    /*border-radius: 50%;*/ /* Bear */
+                    /*border-radius: 50%;*/ /* Miky Bear */
                 }
 
                 &-left {
