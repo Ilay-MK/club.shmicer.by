@@ -20,18 +20,6 @@
 
     .circulation {
 
-        .reson, .reson-offset {
-
-        }
-
-        .col-reson-offset-top {
-            padding: 0;
-
-            .reson-offset-top {
-                margin: 0;
-            }
-        }
-
         .col-reson-offset-bottom {
 
             .reson-offset {
@@ -99,10 +87,49 @@
             }
         }
 
-        .col-reson-offset-top {
-            .arrow-block {
-                left: -10px !important;
-                right: auto !important;
+        .col-reson-offset {
+
+            &-top {
+                padding: 0;
+
+                .arrow-block {
+                    left: -10px !important;
+                    right: auto !important;
+                }
+
+                .reson-offset-top {
+                    margin: 0;
+                }
+            }
+        }
+
+        .reson-arrow {
+
+            &-left {
+
+                .arrow-block {
+                    height: 20px;
+                    bottom: -10px;
+                    left: 0px !important;
+                    width: 11px;
+
+                    .arrow {
+                        bottom: 0;
+                        left: 4px;
+                    }
+                }
+            }
+
+            &-top {
+
+                .arrow-block {
+                    left: -10px;
+                    right: auto;
+
+                    .arrow {
+
+                    }
+                }
             }
         }
 
