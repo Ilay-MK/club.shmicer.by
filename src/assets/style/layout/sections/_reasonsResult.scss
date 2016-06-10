@@ -228,6 +228,10 @@
                     &-bottom {
                         bottom: -47px;
                         /*min-height: 123px !important;*/
+
+                        @media (max-width:767px) {
+                            bottom: 0;
+                        }
                     }
                 }
             }
