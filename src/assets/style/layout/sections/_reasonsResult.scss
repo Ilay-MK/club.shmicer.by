@@ -173,15 +173,14 @@
 
             &-main {
                 bottom: -47px; /*-82px -40px*/
+                /*border-radius: 5px 30%;*/
                 min-height: 19.928571429em; /* 279px 326px*/
                 position: relative;
+                /*text-align: left;*/
 
                 h3 {
                     /*text-align: center;*/
                 }
-
-                border-radius: 5px 30%;
-                /*text-align: left;*/
 
                 &-line {
                     position: relative;
@@ -214,17 +213,17 @@
                         }
 
                         &-bottom {
-                            bottom: -5px;
+                            bottom: -10px;
 
                             &.reson-main-line-left {
-                                left: -45px;
+                                left: -40px;
                                 transform: rotate(-32deg);
                             }
 
                             &.reson-main-line-right {
-                                right: -45px;
+                                right: -40px;
                                 transform: rotate(32deg);
-                                width: 65px;
+                                /*width: 65px;*/
                             }
                         }
                     }
