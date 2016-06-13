@@ -73,7 +73,9 @@ button, .btn {
         background-color: transparent;
         border: 1px solid rgba(0,0,0, 0.5);
         border-radius: 0;
+        font-size: 0.9em;
         padding: 14px 41px 13px 42px;
+        text-transform: uppercase;
         transition: All 300ms ease;
 
         &:link, &:visited, &:hover, &:active, &:focus, &:focus:active {
@@ -89,7 +91,7 @@ button, .btn {
 
         &:active, &:focus:active {
             border: 1px solid rgba(0,0,0, 0.3);
-            background-color: rgba(0,0,0, 0.25);
+            background-color: rgba(0,0,0, 0.6);
         }
     }
 }
