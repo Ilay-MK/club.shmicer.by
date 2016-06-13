@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#instrumentsResult {
+    background-image: url('../img/instrumentsResult/bg_1.jpg');
+
+    .sectionSlide {
+
+        &-content {
+
+            h2 {
+                font-size: 2em;
+            }
+
+            p {
+
+            }
+
+            .btn {
+
+                &-main {
+                    color: #daa520;
+                    font-size: 1.5em;
+                    margin-top: 2em;
+                }
+            }
+        }
+    }
+}
