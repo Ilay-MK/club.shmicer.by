@@ -8,4 +8,9 @@
         @extend %font-PT_Serif;
         font-size: 2.5em;
     }
+
+    h3 {
+        @extend %font-PT_Serif;
+        font-size: 1.71428571em;
+    }
 }
