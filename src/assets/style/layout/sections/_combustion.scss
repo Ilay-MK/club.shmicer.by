@@ -18,13 +18,22 @@
                 }
             }
 
+            .seats {
+                font-size: 2em;
+                margin-top: 2em;
+
+                img {
+                    width: 50px;
+                }
+            }
+
             .btn {
 
                 &-main {
                     color: #ffd700; /*#daa520*/
                     /*font-size: 1.5em;*/
                     font-size: 1.3em;
-                    margin-top: 2em;
+                    margin-top: 0.6em;
                 }
             }
         }
