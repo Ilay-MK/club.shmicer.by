@@ -27,6 +27,7 @@ html {
 }
 
 body {
+    color: map-get($colors, "c_w");
     @extend %font-PT_Sans;
     font-size: 14px;
     line-height: 1.2em;

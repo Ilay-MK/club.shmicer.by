@@ -2,7 +2,6 @@
 
 .sectionSlide {
     @extend %bg-cover;
-    color: map-get($colors, "c_w");
     position: relative;
     text-align: center;
 
