@@ -36,6 +36,7 @@
             /*text-align: center;*/
 
             p {
+
             }
 
             .desc {
@@ -52,6 +53,18 @@
                     font-size: 0.9em;
                     text-transform: uppercase;
                 }
+            }
+        }
+
+        .smTxt {
+            max-width: 250px;
+
+            p {
+                color: rgba(255,255,255, 0.6);
+                font-size: 0.6em;
+                line-height: 1em;
+                margin: 0;
+                padding: 0;
             }
         }
     }
