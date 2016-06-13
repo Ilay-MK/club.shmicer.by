@@ -2,4 +2,31 @@
 
 #combustion {
     background-image: url('../img/combustion/bg_1.jpg');
+    padding: 13em 0;
+
+    .sectionSlide {
+
+        &-content {
+
+            .txt {
+                font-size: 1.5em;
+                margin-top: 2em;
+
+                p {
+                    line-height: 1.2em;
+                    margin: 1em 0;
+                }
+            }
+
+            .btn {
+
+                &-main {
+                    color: #ffd700; /*#daa520*/
+                    /*font-size: 1.5em;*/
+                    font-size: 1.3em;
+                    margin-top: 2em;
+                }
+            }
+        }
+    }
 }
