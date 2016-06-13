@@ -99,9 +99,9 @@ section {
 // Extras
 // -- Highlight Color Customization
 @include highlight-color {
-    /*color: #fff;
-    background-color: #000;*/
-    background-color: transparent;
+    color: #fff;
+    background-color: #000;
+    /*background-color: transparent;*/
     text-shadow: none;
 }
 
