@@ -18,16 +18,19 @@
                 font-size: 2em;
 
                 p {
+
                 }
 
                 .fa {
-
+                    /*color: #98ABF8;*/
+                    color: map-get($colors, "bp");
                 }
             }
 
             .desc {
 
                 p {
+
                 }
             }
         }
@@ -50,6 +53,7 @@
             .btn {
 
                 &.btn-main {
+                    color: map-get($colors, "c_w");
                     min-width: auto;
                     /*font-size: 0.9em;
                     text-transform: uppercase;*/
