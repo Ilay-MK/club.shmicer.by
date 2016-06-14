@@ -18,9 +18,9 @@
             .btn {
 
                 &-main {
-                    color: #ffd700; /*#daa520*/
+                    /*color: #ffd700;*/ /*#daa520*/
                     /*font-size: 1.5em;*/
-                    font-size: 1.3em;
+                    font-size: $fz-button;
                     margin-top: 2em;
                 }
             }

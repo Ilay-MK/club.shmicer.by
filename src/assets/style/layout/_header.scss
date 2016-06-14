@@ -72,6 +72,13 @@
             margin-bottom: 0.5em;
             /*text-align: center;*/
         }
+
+        .btn {
+
+            &-main {
+                font-size: $fz-button;
+            }
+        }
     }
 
     .smTxt {
