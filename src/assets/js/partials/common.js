@@ -37,6 +37,15 @@ $(document).ready(function () {
 
     }
 
+    $(document).scroll(function () {
+        var parallaxBg = $('.parallaxBg');
+
+        /*parallax_bg($('#header'));*/
+        parallax_bg($('#goose'));
+        parallax_bg($('#provocation'));
+        parallax_bg($('#combustion'));
+    });
+
     $('.modal-vertical-centered').on('show.bs.modal', centerModal);
 
     $(window).on("resize", function () {
@@ -107,6 +116,25 @@ $(document).ready(function () {
     });*/
 
 });
+
+//Parallax effect background
+function parallax_bg(parallaxBg) {
+    var currScrollPos = +$(document).scrollTop(),
+        offsetFromTop = parallaxBg.offset(),
+        currToBlock   = +offsetFromTop.top - currScrollPos,
+        maxOffsetAnim = +100,
+        hOffset       = currToBlock/6, /*currToBlock/4*/
+        unit          = "%";
+
+    console.log(currToBlock);
+
+    /*if(hOffset > maxOffsetAnim) { hOffset = 100; unit = "%"; }*/
+    /*if(hOffset < -maxOffsetAnim { hOffset = -100; unit = "%"; }*/
+
+    console.log(hOffset);
+
+    parallaxBg.css('background-position', '50% ' + hOffset + unit);
+}
 
 function checkingVisible(elem) {
     var result = $(elem).is(":visible");
