@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #header {
-    background-image: url('../img/header/bg_3.jpg');
+    background-image: url('../img/header/bg_1.jpg');
 
     .container {
         position: relative;
@@ -47,35 +47,39 @@
                 font-size: 1.36em;
             }
 
-            /*.btn {
+            .btn {
 
                 &.btn-main {
-                    font-size: 0.9em;
-                    text-transform: uppercase;
+                    min-width: auto;
+                    /*font-size: 0.9em;
+                    text-transform: uppercase;*/
                 }
-            }*/
-        }
-
-        .smTxt {
-            max-width: 250px;
-
-            p {
-                color: rgba(255,255,255, 0.6);
-                font-size: 0.6em;
-                line-height: 1em;
-                margin: 0;
-                padding: 0;
             }
         }
     }
 
     .header-content {
-        margin: 9em auto 19em;
+        margin: 7em auto 15em;
 
         h1 {
             @extend %font-PT_Serif;
             font-size: 3.428571429em;
+            margin-bottom: 0.5em;
             /*text-align: center;*/
+        }
+    }
+
+    .smTxt {
+        /*max-width: 250px;*/
+        max-width: 570px;
+        margin: 1em auto 0;
+
+        p {
+            color: rgba(255,255,255, 0.6);
+            /*font-size: 0.6em;*/
+            line-height: 1em;
+            margin: 0;
+            padding: 0;
         }
     }
 }
