@@ -43,12 +43,15 @@
         }
 
         .content {
-
+            
+            p {
+                margin-left: 25px;
+            }
         }
 
         h4 {
             font-weight: 700;
-            text-indent: 25px;
+            margin-left: 25px;
         }
 
         hr {
@@ -93,7 +96,7 @@
             margin-top: 3.5em; /*1.2em*/
 
             p {
-                text-indent: 25px;
+                margin-left: 25px;
             }
         }
     }
