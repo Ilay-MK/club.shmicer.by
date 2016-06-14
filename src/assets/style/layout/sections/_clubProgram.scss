@@ -60,6 +60,26 @@
 
             &.lstn {
                 list-style-type: none;
+                
+                li {
+                    line-height: 1em;
+                    position: relative;
+                    padding-left: 40px;
+                
+                    img {
+
+                        &.icon {
+                            left: 0;
+                            position: absolute;
+                            width: 24px;
+                        }
+                    }
+                    
+                    .fa {
+                        left: 0;
+                        position: absolute;
+                    }
+                }
             }
 
             li {
