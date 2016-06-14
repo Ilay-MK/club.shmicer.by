@@ -31,14 +31,14 @@
 
  	if (!$error) {
         $recepient = "MiKrob09@gmail.com"; /* "MiKrob09@gmail.com" */
-        $sitename = "CfDaPG";
+        $sitename = "Business Сlub";
 
         $pagetitle = "Новая заявка с сайта \"$sitename\"";
         $message = "Имя: $name \nТелефон: $phone\nКуда кликнул: $whichService";
         mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
 
 	} else {
-		echo "<p class='bg-danger text-danger'>Произошла ошибка! Заполните правильно все поля!!!</p>";
+		echo "<p class='bg-danger text-danger'>Произошла ошибка! Заполните правильно все поля!</p>";
 	}
 
     /*header( 'Location: /', true, 307 ); // перебросить на главную страницу сайта с использованием 307 редиректа.*/
