@@ -12,7 +12,10 @@
 // --------------------------------------- //
 
 %transition300ease {
-    transition: All 300ms ease;
+    -webkit-transition: All 300ms ease;
+       -moz-transition: All 300ms ease;
+         -o-transition: All 300ms ease;
+            transition: All 300ms ease;
 }
 
 %outline_boxShadow_none {
