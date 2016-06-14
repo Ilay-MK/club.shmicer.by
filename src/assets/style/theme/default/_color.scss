@@ -2,10 +2,25 @@
 
 $color-white: #fff;
 
+$colors-MediumTurquoise         : rgb(72,191,193);       /*#48bfc1*/
+$colors-MediumTurquoise-opacity : rgba(72,191,193, 0.5); /*#48bfc1 50%*/
+$colors-Bastille                : rgb(42,42,53);         /*#2a2a35*/
+$colors-Bastille-opacity        : rgba(42,42,53, 0.6);   /*#2a2a35 60%*/
+$colors-NightRider              : rgb(53, 53, 53);       /*#353535*/
+
 // --------- //
 
-
+$brand-primary          : $colors-MediumTurquoise;
+$brand-primary-opacity  : $colors-MediumTurquoise-opacity;
+$brand-blackout         : $colors-Bastille;
+$brand-blackout-opacity : $colors-Bastille-opacity;
+$brand-secondary        : $colors-NightRider;
 
 // ------------------------------- //
 
-$c_w: $color-white;
+$c_w : $color-white;
+$bp  : $brand-primary;
+$bpo : $brand-primary-opacity;
+$bb  : $brand-blackout;
+$bbo : $brand-blackout-opacity;
+$bs  : $brand-secondary;
