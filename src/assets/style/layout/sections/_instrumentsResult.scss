@@ -8,12 +8,18 @@
 
         &-content {
 
-            h2 {
-                font-size: 2em;
-            }
-
             p {
 
+            }
+
+            .txt {
+                font-size: $fz-text-second; /*1.5em*/
+                margin-top: 2em;
+
+                p {
+                    line-height: 1.2em;
+                    margin: 1em 0;
+                }
             }
 
             .btn {
