@@ -11,7 +11,7 @@
     }
 
     .blackout {
-        background-color: rgba(42,42,53,.8);
+        background-color: map-get($colors, "bbo"); /*rgba(42,42,53,.8) - 80%*/
     }
 
     .title {
