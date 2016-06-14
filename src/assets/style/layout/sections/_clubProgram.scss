@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #clubProgram {
-    background-color: #353535;
+    background-color: map-get($colors, "bs");
     padding: 100px 0;
 
     .prgBlock {

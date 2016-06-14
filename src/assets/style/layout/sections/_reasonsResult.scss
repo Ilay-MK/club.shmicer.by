@@ -141,7 +141,7 @@
         }
 
         .reson {
-            background-color: rgba(91, 198, 198, 0.5);
+            background-color: map-get($colors, "bpo");
             border-radius: 100px;
             min-height: 11.642857143em;
             overflow: hidden;
