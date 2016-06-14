@@ -31,7 +31,7 @@
                 margin: 0 -2em 20px;
 
                 h3 {
-                    color: #353535;
+                    color: map-get($colors, "bs");
                     margin: -1.2em 0 0;
                     padding: 1.2em 0;
                 }
