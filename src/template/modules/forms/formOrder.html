@@ -1,5 +1,5 @@
 <div class="form-order" role="form">
-    <form action="mail.php" class="order form-inline" id="formOrder" method="post">
+    <form action="mail.php" class="order" id="formOrder" method="post">
 
         <!--
         -- .has-feedback
@@ -24,6 +24,7 @@
             <input type="tel" class="validating form-control form-control-main" name="bsPhone" id="bsPhone" placeholder="Введите номер телефона" aria-describedby="bsPhoneStatus" required="required"  pattern="+375 ([0-9]{2}) [0-9]{3}-[0-9]{2}-[0-9]{2}" />
             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
             <span id="bsPhoneStatus" class="sr-only">(успех)</span>
+            <div class="form-control-feedback-message-success">Заявка отправлена.</div>
         </div>
 
         <input type="hidden" name="whichService" id="whichService" class="form-control" value="Шапка">

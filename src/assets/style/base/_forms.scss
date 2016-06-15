@@ -22,14 +22,14 @@ textarea {
     .form-control {
 
         &-main {
-            background-color: rgba(0,0,0, 0.01);
-            border: 1px solid rgba(67,66,65,.47);
+            border: 1px solid map-get($colors, "bso");
             border-radius: 0;
             box-shadow: inset 2px 2px 6px rgba(0,0,0, .11);
             color: rgba(67,66,65,.47);
-            display: inline-block;
+            /*display: inline-block;*/
             height: auto;
-            padding: 15px 20px 15px;
+            margin-bottom: 28px;
+            padding: 9px 20px 9px;
 
             &:focus {
                 @extend %outline_boxShadow_none;
@@ -38,10 +38,28 @@ textarea {
             }
         }
     }
-
+    
     .form-control-feedback {
+        top: 3px !important;
+        
+        &-icon, &-message-error, &-message-success {
+            @extend %transition300ease;
+            /*display: none;*/
+            opacity: 0;
+            position: absolute;
+        }
 
-    }
+        &-message-error, &-message-success {
+            @extend %font-PT_Sans;
+            bottom: -24px;
+            color: map-get($colors, "c_r");
+            right: 7px;
+        }
+        
+        &-message-success {
+            color: #3c763d;
+        }
+    }  
 
     &.has {
         &-error {
