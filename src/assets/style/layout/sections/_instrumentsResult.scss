@@ -6,6 +6,91 @@
     background-attachment: fixed;
     padding-bottom: 3.571428571em; /*50px*/
     position: relative;
+    
+    .scheme {
+        margin-bottom: 5em;
+        
+        .r {
+            border-left: 1px solid map-get($colors, "bpo");
+            padding-bottom: 1em;
+            padding-top: 1em;
+            
+            .c {
+                border-top: 1px solid map-get($colors, "bpo");
+            }
+                
+            .line {
+                background-color: map-get($colors, "bpo");
+                position: absolute;
+
+                &-vertical {
+                    height: 10px;
+                    left: 50%;
+                    top: 0;
+                    width: 1px;
+                }
+
+                &-horizontal {
+                    height: 1px;
+                    left: 0;
+                    top: 50%;
+                    width: 15px;
+                }
+            }
+            
+            .wrapper {
+                background-color: map-get($colors, "bso");
+                border: 1px solid map-get($colors, "bpo");
+                /*border-radius: 20px;*/
+                height: 130px;
+                margin: 10px auto;
+                padding: 0.5em;
+                vertical-align: middle;
+                width: 90%;
+                
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /*text-align: center;*/
+            }
+            
+            .main {
+
+                &.c {
+                    /*border-top: none;*/
+                }
+                
+                .wrapper {
+                    background-color: map-get($colors, "bpo");
+                    border: none;
+                    border-radius: 0;
+                    height: 150px;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+                
+                &-super {
+                    border-top: 1px solid map-get($colors, "bpo");
+                    border: none;
+                    
+                    .wrapper {
+                        border: 1px solid map-get($colors, "bp");
+                        background-color: rgba(255,255,255, 0.6);
+                        color: map-get($colors, "bp");
+        
+                        .human {
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .sectionSlide {
 
