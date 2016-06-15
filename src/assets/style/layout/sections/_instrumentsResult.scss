@@ -137,23 +137,23 @@
 
         &-content {
             background-color: map-get($colors, "bso");
-            padding: 5em 0;
+            padding: 5em 10px;
             text-align: center;
             
             @media only screen and (max-width: 479px) {
-                padding: 1em 0;
+                padding: 1em 10px;
             }
 
             @media only screen and (min-width: 480px) and (max-width: 767px) {
-                padding: 2em 0;
+                padding: 2em 10px;
             }
 
             @media only screen and (min-width: 768px) and (max-width: 991px) {
-                padding: 3em 0;
+                padding: 3em 10px;
             }
 
             @media only screen and (min-width: 992px) and (max-width: 1199px) {
-                padding: 4em 0;
+                padding: 4em 10px;
             }
 
             p {
@@ -191,7 +191,7 @@
                     /*margin-top: 2em;*/
 
                     @media only screen and (max-width: 400px) {
-                        font-size: 0.95em;
+                        font-size: 0.86em;
                     }
                 }
             }
