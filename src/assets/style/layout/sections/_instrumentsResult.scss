@@ -5,15 +5,23 @@
     background-image: url('../img/instrumentsResult/bg_1.jpg');
     background-attachment: fixed;
     padding-bottom: 3.571428571em; /*50px*/
+    padding-top: 3.571428571em;
     position: relative;
+            
+    @media only screen and (max-width: 767px) {
+        background-image: none;
+    }
     
     .blackout {
         background-color: rgba(42,42,53,.9);
     }
     
     .title {
+        margin: 0;
         
         h2 {
+            color: map-get($colors, "bs");
+            margin: 0;
             
             @media only screen and (max-width: 767px) {
                 font-size: 1.5em;
@@ -119,11 +127,6 @@
                         border: 1px solid map-get($colors, "bp");
                         background-color: rgba(255,255,255, 0.6);
                         color: map-get($colors, "bp");
-        
-                        .human {
-                            border-radius: 50%;
-                            overflow: hidden;
-                        }
                     }
                 }
             }
