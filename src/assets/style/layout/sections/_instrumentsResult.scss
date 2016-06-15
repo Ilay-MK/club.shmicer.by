@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
 #instrumentsResult {
+    @extend %bg-cover;
     background-image: url('../img/instrumentsResult/bg_1.jpg');
     background-attachment: fixed;
+    padding-bottom: 3.571428571em; /*50px*/
+    position: relative;
 
     .sectionSlide {
 
         &-content {
+            background-color: map-get($colors, "bso");
+            padding: 5em 0;
+            text-align: center;
 
             p {
 
@@ -14,7 +20,7 @@
 
             .txt {
                 font-size: $fz-text-second; /*1.5em*/
-                margin-top: 2em;
+                /*margin-top: 2em;*/
 
                 p {
                     line-height: 1.2em;
@@ -28,7 +34,7 @@
                     /*color: #ffd700;*/ /*#daa520*/
                     /*font-size: 1.5em;*/
                     font-size: $fz-button;
-                    margin-top: 2em;
+                    /*margin-top: 2em;*/
                 }
             }
         }
