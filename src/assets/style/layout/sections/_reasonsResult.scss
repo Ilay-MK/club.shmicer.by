@@ -17,6 +17,12 @@
         }
     }
     
+    .reson-xs {
+        border-radius: 0 !important;
+        bottom: 0 !important;
+        margin: 0 -15px 2em;
+    }
+    
     h3 {
         font-size: 1.714285714em;
             
@@ -57,6 +63,12 @@
     }
 
     .circulation {
+            
+        @media only screen and (max-width: 767px) {
+            background-color: map-get($colors, "bso");
+            border: 1px solid map-get($colors, "bpo");
+            padding-bottom: 2em;
+        }
 
         .col-reson-offset-bottom {
 
