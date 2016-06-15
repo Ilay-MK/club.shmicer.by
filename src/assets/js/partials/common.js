@@ -134,6 +134,9 @@ $(document).ready(function () {
 
 //Parallax effect background
 function parallax_bg(parallaxBg) {
+    if (getPageSize()[2] < 768) {
+        return;
+    }
     var currScrollPos = +$(document).scrollTop(),
         offsetFromTop = parallaxBg.offset(),
         currToBlock   = +offsetFromTop.top - currScrollPos,
