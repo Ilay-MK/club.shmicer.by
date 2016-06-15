@@ -2,7 +2,23 @@
 
 #clubProgram {
     background-color: map-get($colors, "bs");
-    padding: 100px 0;
+    padding: 7.142857143em 0;
+            
+    @media only screen and (max-width: 479px) {
+        padding: 4em 0;
+    }
+            
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        padding: 4em 0;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        padding: 4.5em 0;
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        padding: 6em 0;
+    }
 
     .prgBlock {
         border: 1px solid map-get($colors, "c_w");
@@ -12,13 +28,29 @@
             margin-right: -31px;
             margin-top: 6.3em;
             padding: 2.8em 2em; /*1.5em*/
+    
+            @media only screen and (max-width: 991px) {
+                margin-right: auto;
+            }
 
             .title {
                 margin-bottom: 3.5em;
             }
 
             .content {
-                font-size: 1.6em;
+                font-size: $fz-text-second;
+            
+                @media only screen and (max-width: 767px) {
+                    font-size: 1.1em;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 991px) {
+                    font-size: 1.3em;
+                }
+
+                @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                    font-size: 1.5em;
+                }
             }
         }
 
@@ -26,6 +58,15 @@
             /*margin-top: 1.5em;*/
             /*border-left: 0px solid transparent;
             border-left: none;*/
+    
+            @media only screen and (max-width: 767px) {
+                padding-top: 1.5em;
+            }
+    
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                margin-left: -31px;
+                padding-top: 1.8em;
+            }
 
             .title {
                 background-color: #fff;
@@ -35,12 +76,39 @@
                     color: map-get($colors, "bs");
                     margin: -1.2em 0 0;
                     padding: 1.2em 0;
+            
+                    @media only screen and (max-width: 767px) {
+                        font-size: 1.3em;
+                    }
+
+                    @media only screen and (min-width: 768px) and (max-width: 991px) {
+                        font-size: 1.5em;
+                    }
+
+                    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                        font-size: 1.7em;
+                    }
                 }
             }
         }
 
         .title {
             margin-top: 0;
+            
+            h2 {
+                
+                @media only screen and (max-width: 767px) {
+                    font-size: 1.5em;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 991px) {
+                    font-size: 1.8em;
+                }
+
+                @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                    font-size: 2.0em;
+                }
+            }
         }
 
         .content {

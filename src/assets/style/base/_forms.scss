@@ -98,6 +98,10 @@ button, .btn {
         padding: 14px 41px 13px 42px;
         text-transform: uppercase;
         transition: All 300ms ease;
+            
+        @media only screen and (max-width: 479px) {
+            min-width: 100%;
+        }
 
         &:link, &:visited {
             @extend %outline_boxShadow_none;
