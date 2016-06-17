@@ -144,12 +144,12 @@ function parallax_bg(parallaxBg) {
         hOffset       = currToBlock/6, /*currToBlock/4*/
         unit          = "%";
 
-    console.log(currToBlock);
+    /*console.log(currToBlock);*/
 
     /*if(hOffset > maxOffsetAnim) { hOffset = 100; unit = "%"; }*/
     /*if(hOffset < -maxOffsetAnim { hOffset = -100; unit = "%"; }*/
 
-    console.log(hOffset);
+    /*console.log(hOffset);*/
 
     parallaxBg.css('background-position', '50% ' + hOffset + unit);
 }
